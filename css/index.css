@@ -13,10 +13,22 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 /* HEADER */
-header {
+.header__top {
   background-color: #ff4f81;
+  font-size: 14px;
+}
+
+.header__right a {
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: black;
+  border: 1px solid black;
+  margin: 0.25rem;
+  display: inline-block;
 }
