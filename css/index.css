@@ -10,3 +10,13 @@ html,
 body {
   font-family: 'Work Sans', serif;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+header {
+  background-color: #ff4f81;
+}
