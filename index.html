@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Instruction</title>
 
     <!-- Bootstrap CSS 5.3.3 -->
     <link
@@ -36,13 +36,15 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div class="header__top container">
+      <div
+        class="header__top container-fluid d-flex justify-content-between align-items-center py-1"
+      >
         <div class="header__left">
-          <a href="tel:0961051014">
+          <a href="tel:0961051014" class="text-white me-4">
             <i class="fa-solid fa-phone"></i> 096.105.1014
           </a>
-          <a href="mailto:thanhnlmvn@gmail.com">
-            <i class="fa-solid fa-envelope"></i> thanhnlmvn@gmail.com
+          <a href="mailto:thanhnlmvn@gmail.com" class="text-white">
+            <i class="fa-regular fa-envelope"></i> thanhnlmvn@gmail.com
           </a>
         </div>
         <div class="header__right">
@@ -60,10 +62,149 @@
           </a>
         </div>
       </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary navInstruction">
+        <div class="container">
+          <a class="navbar-brand text-center" href="#">
+            <p class="fw-bold mb-0">
+              <i class="fa-solid fa-book"></i> INSTRUCTION
+            </p>
+            <p>EDUCATION</p>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarInstruction"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarInstruction">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GALLERY</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PAGES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Codes</a></li>
+                  <li><a class="dropdown-item" href="#">Icon</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- CAROUSEL -->
-    <section class="carousels"></section>
+    <section class="carousels">
+      <div id="carousels" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/banner1.jpg" class="d-block w-100" alt="banner1" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Graphic Work Designing</h5>
+              <p>
+                Any successful career starts with good education. Together with
+                us you will have deeper knowledge of the subjects
+              </p>
+              <button class="btn">
+                Read More <i class="fa-solid fa-angles-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/banner2.jpg" class="d-block w-100" alt="banner2" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Financial Analyst Course.</h5>
+              <p>
+                Any successful career starts with good education. Together with
+                us you will have deeper knowledge of the subjects
+              </p>
+              <button class="btn">
+                Read More <i class="fa-solid fa-angles-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/banner3.jpg" class="d-block w-100" alt="banner3" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Digital Marketing Course.</h5>
+              <p>
+                Any successful career starts with good education. Together with
+                us you will have deeper knowledge of the subjects
+              </p>
+              <button class="btn">
+                Read More <i class="fa-solid fa-angles-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousels"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousels"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
     <!-- EDUCATION -->
     <section class="education"></section>
